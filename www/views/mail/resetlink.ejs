@@ -1,0 +1,4 @@
+<p><strong><%= user.name %></strong>, uue parooli genereerimiseks <a href="https://<%= hostname %>/reset-password?email=<%- encodeURIComponent(user.id) %>&resetToken=<%= resetToken %>">kliki siia</a>.</p>
+
+<p><small>Said selle kirja, kuna keegi (loodetavasti sina), soovis sinu e-posti aadressiga seotud kontole genereerida uut parooli aadressil <a href="https://<%= hostname %>"><%= hostname %></a></small></p>
+

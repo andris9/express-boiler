@@ -1,0 +1,45 @@
+{
+    "workerCount": 1,
+
+    "loggerInterface": "dev",
+
+    "hostname": "localhost",
+
+    "title": "LOCALHOST",
+
+    "twitter": "andrisreinman",
+
+    "web":{
+        "port": 443,
+        "ssl":{
+            "key": "certs/server.key",
+            "cert": "certs/server.crt",
+            "ca": []
+        }
+    },
+
+    "session": {
+        "secret": "hiUTQ4KtjsCIdyC6G2XOzzaTPBo",
+        "ttl": 3600
+    },
+
+    "redis":{
+        "host": "localhost",
+        "db": 3,
+        "port": false
+    },
+
+    "mail":{
+        "from": "LOCALHOST <no-reply@localhost>",
+        "smtp":{
+            "#": "INSERT NODEMAILER SMTP OPTIONS HERE",
+            "host": "localhost",
+            "debug": true
+        }
+    },
+
+    "mongo":{
+        "host": "localhost",
+        "name": "local"
+    }
+}

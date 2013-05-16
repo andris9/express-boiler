@@ -1,0 +1,30 @@
+{
+  "name": "express-boiler",
+  "version": "0.1.1",
+  "private": true,
+  "description": "Pangalink.net premium",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@bitbucket.org/andris9/pangalink.net.git"
+  },
+  "author": "Andris Reinman",
+  "license": "MIT",
+
+  "dependencies": {
+    "express": "*",
+    "ejs": "*",
+    "moment": "*",
+    "connect-redis": "*",
+    "redis": "*",
+    "hiredis": "*",
+    "passport": "*",
+    "connect-flash": "*",
+    "passport-local": "*",
+    "nodemailer": "*",
+    "mongodb": "*"
+  }
+}

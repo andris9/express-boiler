@@ -1,0 +1,11 @@
+<li<% if(page=="/"){%> class="active"<%}%>><a href="/">Esileht</a></li>
+
+<% if(user){ %>
+    <li<% if(page=="/profile"){%> class="profile"<%}%>><a href="/profile">Profiil</a></li>
+    <li<% if(page=="/logout"){%> class="active"<%}%>><a href="/logout">Logi välja</a></li>
+<% } %>
+
+<% if(!user){%>
+    <li<% if(page=="/join"){%> class="active"<%}%>><a href="/join">Loo konto</a></li>
+    <li<% if(page=="/login"){%> class="active"<%}%>><a href="/login">Logi sisse</a></li>
+<% } %>

@@ -1,0 +1,48 @@
+<form action="/profile" method="post">
+
+    <h3>Muuda oma konto andmeid</h3>
+
+    <div class="control-group <% if(validation.name){%>error<%}%>">
+        <label class="control-label" for="name">Sinu nimi</label>
+        <div class="controls">
+            <input class="span3" type="text" name="name" id="name" value="<%= name %>" required/>
+            <% if(validation.name){%>
+                <span class="help-inline"><%= validation.name %></span>
+            <%}%>
+        </div>
+    </div>
+
+    <div class="control-group <% if(validation.email){%>error<%}%>">
+        <label class="control-label" for="email">Sinu e-posti aadress</label>
+        <div class="controls">
+            <input class="span3" type="email" name="email" id="email" value="<%= email %>" disabled/>
+            <% if(validation.email){%>
+                <span class="help-inline"><%= validation.email %></span>
+            <%}%>
+        </div>
+    </div>
+
+    <p><strong>Jäta parooli väljad tühjaks, kui ei soovi oma parooli muuta</strong></p>
+
+    <div class="control-group <% if(validation.password){%>error<%}%>">
+        <label class="control-label" for="password">Uus parool</label>
+        <div class="controls">
+            <input class="span3" type="password" name="password" id="password"/>
+            <% if(validation.password){%>
+                <span class="help-inline"><%= validation.password %></span>
+            <%}%>
+        </div>
+    </div>
+
+    <div class="control-group <% if(validation.password2){%>error<%}%>">
+        <label class="control-label" for="password2">Korda uut parooli</label>
+        <div class="controls">
+            <input class="span3" type="password" name="password2" id="password2"/>
+            <% if(validation.password2){%>
+                <span class="help-inline"><%= validation.password2 %></span>
+            <%}%>
+        </div>
+    </div>
+
+    <button type="submit" class="btn">Salvesta konto andmed</button>
+</form>
